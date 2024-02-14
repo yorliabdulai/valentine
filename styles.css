@@ -1,18 +1,71 @@
-/* Add this to styles.css */
-button {
-    background-color: #cc0000; /* Dark red button background */
-    color: #ffffff; /* White button text */
-    padding: 10px;
-    border: none;
-    cursor: pointer;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-button:hover {
-    background-color: #ff6666; /* Light red button background on hover */
+.container {
+  width: 80%;
+  max-width: 600px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+header {
+  background-color: #ff6347;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card p {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
-
-/* Add more styles if needed */
