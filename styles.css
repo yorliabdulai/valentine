@@ -34,31 +34,45 @@ button {
   cursor: pointer;
 }
 
+/* Add some basic styles for the .card-container class */
 .card-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 1rem;
-}
-
-.card {
-  width: 100%;
-  max-width: 300px;
-  margin: 0 auto 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  overflow: hidden;
-  transition: transform 0.3s ease-in-out;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-}
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Style the .card class */
+  .card {
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.2s ease-out;
+  }
+  
+  /* Style the .card img element */
+  .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  /* Style the .card p element */
+  .card p {
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Add hover styles to the .card class */
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2);
+    border: 2px solid red;
+  }
 
 .card p {
   padding: 1rem;
