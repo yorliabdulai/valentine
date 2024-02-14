@@ -24,16 +24,23 @@ header {
   color: #fff;
 }
 
-button {
+
+button{
   width: 100%;
   padding: 1rem;
-  background-color: #ff6347;
+  background-color: #45ddaa;
+ /* Distinguished background color for the button */
   color: #fff;
   border: none;
   font-size: 1.2rem;
   cursor: pointer;
+  transition: background-color 0.2s ease-out;
+ /* Add a transition effect for the hover effect */
 }
 
+button:hover {
+  background-color: #ff4d43; /* Change the background color on hover */
+}
 /* Add some basic styles for the .card-container class */
 .card-container {
     display: flex;
@@ -83,3 +90,85 @@ button {
 .hidden {
   display: none;
 }
+#envelope{
+    margin: 150px;
+    position: relative;
+    width: 280px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 150px;
+    background-color: #f9c5c8;
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.2);
+}
+.envelope-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+  }
+  
+  .envelope {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .envelope:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-left: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .envelope.opening {
+    transform: translateY(-100%);
+  }
+  
+  .envelope.opened{
+    transform: translateY(0);
+  }
+  
+  .open-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 30px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    user-select: none;
+  }
+  
+  .reset-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 1rem;
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    user-select: none;
+  }

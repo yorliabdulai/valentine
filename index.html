@@ -33,7 +33,25 @@
                 <!-- Add more images and messages as needed -->
             </div>
         </section>
+        
     </div>
+    <div class="container"><?php include 'heart.php'; ?></div>
+    <div class="envelope-container">
+        <div id="envelope"
+             class="envelope hidden"
+             data-state="closed"
+             data-frames="12"
+        >
+            <button id="openEnvelope" class="open-button">Open</button>
+            <button id="resetEnvelope" class="reset-button">Reset</button>
+            <div class="frames hidden"
+                 data-frames="12"
+            >
+                <!-- Add pic frames here -->
+            </div>
+        </div>
+    </div>
+
 
     <script src="script.js"></script>
 </body>
