@@ -87,6 +87,15 @@ button:hover {
   font-size: 1.1rem;
 }
 
-.hidden {
-  display: none;
-}
+
+.card-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s ease-out;
+  }
+  
+  .card-container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in;
+  }
