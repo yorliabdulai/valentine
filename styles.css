@@ -1,0 +1,18 @@
+/* Add this to styles.css */
+button {
+    background-color: #cc0000; /* Dark red button background */
+    color: #ffffff; /* White button text */
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6666; /* Light red button background on hover */
+}
+
+.hidden {
+    display: none;
+}
+
+/* Add more styles if needed */
